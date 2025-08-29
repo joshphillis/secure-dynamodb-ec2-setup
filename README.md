@@ -35,7 +35,7 @@ ls -al
 mkdir dynamodb
 cd dynamodb
 ls -al
-nano dynamo.py (create, copy, paste python script, CTRL + X to exit
+nano dynamo.py (create, copy, paste python script, CTRL + X to exit) -- if "Unable to locate credentials" is the output, move to IAM Role Setup, then try again.
 python dynamo.py (run the script)
 
 ```
