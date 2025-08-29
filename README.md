@@ -21,10 +21,23 @@ This project demonstrates how to deploy an EC2 instance on AWS, configure Python
 
 ### 2. Configure Environment
 ```bash
-sudo apt update && sudo apt install python3.12 python3.12-venv -y
-python3.12 -m venv /opt/dynamodb/venv
-source /opt/dynamodb/venv/bin/activate
+sudo apt update
+sudo apt install python3
+python3 --version (verify python version)
+sudo apt install python3-pip
+sudo apt install python3-venv
+python3 -m venv ~/venv
+source ~/venv/bin/activate
 pip install boto3
+sudo chown ubuntu:ubuntu -R /opt
+cd /opt
+ls -al
+mkdir dynamodb
+cd dynamodb
+ls -al
+nano dynamo.py (create, copy, paste python script, CTRL + X to exit
+python dynamo.py (run the script)
+
 ```
 
 ### 3. IAM Role Setup
